@@ -1,0 +1,166 @@
+* {margin 0; padding 0;}
+body{
+  font-family: arial, helvetica, sans-serif;
+  background-color: #a8a8a8;
+}
+#wrapper{
+  min-width: 760px; max-width: 1100px; margin:auto;
+
+}
+header{
+  width:100%;
+  margin: 10px 0 0;
+  background: #fff;
+  display: table;
+}
+/*header img{
+  display: table-cell;
+  height: 100px;
+  margin: 25px 0 20px 25px;
+}*/
+header h1{
+  //display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+nav.menu ul{
+  margin:4px 0 0 ;
+  padding-left:0;
+  display: inline-block;
+  //border-left:1px solid #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+
+}
+nav.menu li{
+  list-style-type: none;
+  float:left;
+    //border-top: 1px solid #fff;
+//  border-right:1px solid #fff;
+//  border-bottom:1px solid #fff;
+  padding: 10px 10px;
+//  border: 1px solid #fff;
+//  border-radius: 10px;
+}
+nav.menu li:first-child{
+  //border-radius: 5px ;
+}
+nav a{
+  color:#fff;
+  text-decoration: none;
+}
+div.dropdown{
+  display:none;
+
+}
+nav.menu ul:hover div.dropdown{
+  display:block;
+  float:left;
+}
+section.homemain{
+  margin:0;
+  background-color: #fff;
+  text-align: center;
+  padding:0 10px 0 20px;
+  vertical-align: middle;
+}
+video{
+  padding:50px 0 0 10px;
+}
+section img{
+  display: table-cell;
+  width:400px;
+}
+div.announcements{
+
+}
+section.homemain{
+  padding: 10px 0;
+}
+section.homemain h2{
+  text-align: center;
+}
+section.attention{
+  margin:0;
+  display: table;
+  background-color: #fff;
+  padding:0 0 0 10px;
+  max-width: 1100px;
+
+}
+.attention .upcoming h2{
+  text-align:center;
+}
+.attention .upcoming{
+  display: table-cell;
+  min-width: 364px;
+}
+.attention .resources h2{
+  text-align:center;
+
+}
+.attention .resources{
+  text-align:center;
+
+display: table-cell;
+min-width: 364px;
+
+}
+.attention .reminders{
+  display: table-cell;
+  width:100%;
+  min-width: 364px;
+
+}
+.attention .reminders h2{
+  text-align:center;
+
+}
+.attention .reminders p{
+}
+.recommentations{
+  display: table;
+  border-top: 1px solid white;
+  margin-top: 5px;
+  background-color: #fff;
+}
+.recommentations div h2{
+  text-align: center;
+}
+.recommentations div{
+  display: table-cell;
+  padding:0 1em;
+}
+.aboutme{
+  display: table;
+  background-color: #fff;
+}
+.aboutme div{
+  padding: 0 0 0 5px;
+  display: table-cell;
+  vertical-align:top;
+}
+.aboutme img{
+  display: table-cell;
+}
+
+form{
+  background-color: #fff;
+}
+form .note{
+  padding: 5px 0 0 0;
+  font-size: .8em;
+}
+form section{
+  padding:0 0 5px 5px;
+}
+
+footer {
+	margin-top: 10px;
+	margin-bottom:;
+	clear:both;
+	background:#fff;
+	text-align:center;
+	padding: 1px;
+  color:#000;
+	}
