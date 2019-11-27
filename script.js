@@ -1,6 +1,92 @@
 
 
 $(document).ready(function(){
+//Recap
+$("#recap_form").submit(
+	function(event){
+		$("span").text("*");
+		var isValid = true;
+		var recap1 = $("#Recap1").val();
+		var recap2 = $("#Recap2").val();
+		var recap3 = $("#Recap3").val();
+		var recap4 = $("#Recap4").val();
+		var recap5 = $("#Recap5").val();
+		var recap6 = $("#Recap6").val();
+		var recap7 = $("#Recap7").val();
+		var recap8 = $("#Recap8").val();
+		var recap9 = $("#Recap9").val();
+//Task 2.c validate form fields
+		if (recap1 == ""){//Task 1.b.2 use an if statement
+			$("#Recap1").next().text("This field is required")
+			isValid = false;
+		}else if (recap1 != "e"){
+			$("#Recap1").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap2 == ""){
+			$("#Recap2").next().text("This field is required")
+			isValid = false;
+		}else if (recap2 != "a"){
+			$("#Recap2").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap3 == ""){
+			$("#Recap3").next().text("This field is required")
+			isValid = false;
+		}else if (recap3 != "c"){
+			$("#Recap3").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap4 == ""){
+			$("#Recap4").next().text("This field is required")
+			isValid = false;
+		}else if (recap4 != 3){
+			$("#Recap4").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap5 == ""){
+			$("#Recap5").next().text("This field is required")
+			isValid = false;
+		}else if (recap5 != 2){
+			$("#Recap5").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap6 == ""){
+			$("#Recap6").next().text("This field is required")
+			isValid = false;
+		}else if (recap6 != 3){
+			$("#Recap6").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap7 == ""){
+			$("#Recap7").next().text("This field is required")
+			isValid = false;
+		}else if (recap7 != "f"){
+			$("#Recap7").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap8 == ""){
+			$("#Recap8").next().text("This field is required")
+			isValid = false;
+		}else if (recap8 != "pp"){
+			$("#Recap8").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (recap9 == ""){
+			$("#Recap9").next().text("This field is required")
+			isValid = false;
+		}else if (recap9 != "mf"){
+			$("#Recap9").next().text("Incorrect answer")
+			isValid = false;
+		}
+		if (isValid == false) {
+			event.preventDefault();
+		} else{
+			alert("Good job! You got them all right.");//Task 1.a.2 use an alert()function
+		}
+	}
+)
+
 	//Rhythm
 //alert("!")
 	//Rhythm Notes Math
@@ -77,7 +163,7 @@ $(document).ready(function(){
 	)
 //Note Names Treble
 	var counter = 0;
-	var treble_img = [
+	var treble_img = [//Task 1.b.1 use an array
 		"img/note_names/E4.png",
 		"img/note_names/F4.png",
 		"img/note_names/G4.png",
@@ -101,17 +187,19 @@ $(document).ready(function(){
 	]
 	//	$("#show_answer").button();
 	var next_note = Math.floor(Math.random() * treble_img.length)
-	document.getElementById("treble_note").src = treble_img[next_note];
+	document.getElementById("treble_note").src = treble_img[next_note];//Task 1.e.2 manipulate an image
 	document.getElementById("treble_note").alt = treble_alt[next_note];
 	var x = document.getElementById("treble_note").alt;
-	$("#note_new").click(function(){
+	$("#note_new").click(function(){//Task 1.c.1 use a custom function
+		//Task 2.a.1 use a jQuery selector
+		//Task 2.a.3 use a jQuery event
 		var next_note = Math.floor(Math.random() * treble_img.length)
-		document.getElementById("treble_note").src = treble_img[next_note];
+		document.getElementById("treble_note").src = treble_img[next_note];//Task 1.d.3 change an attribute/element property
 		document.getElementById("treble_note").alt = treble_alt[next_note];
 		var x = document.getElementById("treble_note").alt;
 		//I tried getElementsByClassName here to eliminate some lines but it wouldn't work
 		//document.getElementsByClassName("note_button").style.backgroundColor = "#b7bec9"
-		document.getElementById("note_a").style.backgroundColor = "#b7bec9";
+		document.getElementById("note_a").style.backgroundColor = "#b7bec9";//Task 2.a.2 use a jQuery method
 		document.getElementById("note_b").style.backgroundColor = "#b7bec9";
 		document.getElementById("note_c").style.backgroundColor = "#b7bec9";
 		document.getElementById("note_d").style.backgroundColor = "#b7bec9";
@@ -119,21 +207,7 @@ $(document).ready(function(){
 		document.getElementById("note_f").style.backgroundColor = "#b7bec9";
 		document.getElementById("note_g").style.backgroundColor = "#b7bec9";
 	})
-//back up below
-/*	$("#note_new").click(function(){
-		if (counter < 2){
-		document.getElementById("treble_note").src = treble_img[++counter];
-		document.getElementById("treble_note").alt = treble_alt[counter];
-		var x = document.getElementById("treble_note").alt;
-		alert(x);
-	} else{
-		counter = -1;
-		document.getElementById("treble_note").src = treble_img[++counter];
-		document.getElementById("treble_note").alt = treble_alt[counter];
-		var x = document.getElementById("treble_note").alt;
-		alert(x);
-	}
-})*/
+
 
 $("#note_a").click(function(){
 	var x = document.getElementById("treble_note").alt;
@@ -199,7 +273,6 @@ if (x == "g"){
 }
 });
 
-
 //Note Names Bass
 var counter = 0;
 var bass_img = [
@@ -245,22 +318,6 @@ $("#note_new").click(function(){
 	document.getElementById("note_f").style.backgroundColor = "#b7bec9";
 	document.getElementById("note_g").style.backgroundColor = "#b7bec9";
 })
-//back up below
-/*	$("#note_new").click(function(){
-	if (counter < 2){
-	document.getElementById("treble_note").src = treble_img[++counter];
-	document.getElementById("treble_note").alt = treble_alt[counter];
-	var x = document.getElementById("treble_note").alt;
-	alert(x);
-} else{
-	counter = -1;
-	document.getElementById("treble_note").src = treble_img[++counter];
-	document.getElementById("treble_note").alt = treble_alt[counter];
-	var x = document.getElementById("treble_note").alt;
-	alert(x);
-}
-})*/
-
 
 $("#note_a").click(function(){
 var x = document.getElementById("bass_note").alt;
@@ -332,7 +389,7 @@ document.getElementById("note_g").style.backgroundColor = "red";
 })
 });
  $( function(){
-	 $("#drag_pp").draggable();
+	 $("#drag_pp").draggable();//Task 2.d.2 use a jQuery widget
 	 $("#drag_p").draggable();
 	 $("#drag_mp").draggable();
 	 $("#drag_mf").draggable();
@@ -346,7 +403,7 @@ document.getElementById("note_g").style.backgroundColor = "red";
 			 .addClass ("ui-state-highlight")
 			 .find ("p")
 			 .html ("Pianissimo");
-			 $("#drag_pp").fadeOut();
+			 $("#drag_pp").fadeOut();//Task 1.e.2 manipulate an image
 		 }
 	 })
 	 $("#drop_p").droppable({
@@ -356,7 +413,7 @@ document.getElementById("note_g").style.backgroundColor = "red";
 			 .addClass ("ui-state-highlight")
 			 .find ("p")
 			 .html ("Piano");
-			 $("#drag_p").fadeOut();
+			 $("#drag_p").fadeOut();//Task 2.b.1 usa a jQuery effect
 		 }
 	 })
 	 $("#drop_mp").droppable({

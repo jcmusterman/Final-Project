@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>How to Read Music</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--<div id="wrapper">-->
+    <header>
+      <h1>Recap Quiz</h1>
+    </header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="staff.html">The Staff</a></li>
+        <!--<div class="dropdown">
+            <ul>
+              <li><a href="treble.html">Treble Clef</a></li>
+              <li><a href="bass.html">bass Clef</a></li>
+            </ul>
+          </div>-->
+          </li><!--add sub pages for treble and bass clef each-->
+          <li><a href="rhythm_notes.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
+          <li><a href="dynamics.html">Dynamics</a></li>
+        </ul>
+      </nav>
+      <form action="#" method="get"
+          name="recap_form" id="recap_form">
+        <fieldset>
+              <legend>Note Names</legend>
+              <p>Name the following notes:</p>
+              <label for="Recap1">Q1:</label><br>
+              <img src="img/note_names/E4.png" alt="e" style="width:200px"><br>
+              <input type="text" name="Recap1" id="Recap1" autofocus>
+              <span>*</span><br><br>
+              <label for="Recap2">Q2:</label><br>
+              <img src="img/note_names/A2.png" alt="a" style="width:200px"><br>
+              <input type="text" name="Recap2" id="Recap2">
+              <span>*</span><br><br>
+              <label for="Recap3">Q3:</label><br>
+              <img src="img/note_names/C5.png" alt="c" style="width:200px"><br>
+              <input type="text" name="Recap3" id="Recap3">
+              <span>*</span><br>
+        </fieldset>
+        <fieldset>
+              <legend>Rhythm</legend>
+              <p>Enter the total number of beats for the combinations shown.</p>
+              <label for="Recap4">Q4:</label><br>
+              <img src="img/math_4.png" alt="math_4" style="width:200px"><br>
+              <input type="number" name="Recap4" id="Recap4" autofocus>
+              <span>*</span><br><br>
+              <label for="Recap5">Q5:</label><br>
+              <img src="img/math_1.png" alt="math_1" style="width:200px"><br>
+              <input type="number" name="Recap5" id="Recap5">
+              <span>*</span><br><br>
+              <label for="Recap6">Q6:</label><br>
+              <img src="img/math_7.png" alt="math_7" style="width:200px"><br>
+              <input type="number" name="Recap6" id="Recap6">
+              <span>*</span><br>
+        </fieldset>
+        <fieldset>
+              <legend>Dynamics</legend>
+              <p>Type the symbols that match the definitions</p>
+              <label for="Recap7">Q7:</label><br>
+              <h3>Forte</h3>
+              <input type="text" name="Recap7" id="Recap7" autofocus>
+              <span>*</span><br><br>
+              <label for="Recap8">Q8:</label><br>
+              <h3>Pianissimo</h3>
+              <input type="text" name="Recap8" id="Recap8">
+              <span>*</span><br><br>
+              <label for="Recap9">Q9:</label><br>
+              <h3>Mezzo Forte</h3>
+              <input type="text" name="Recap9" id="Recap9">
+              <span>*</span><br>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit Answers"><br>
+
+      </form>
+<footer>
+  <p>Joseph Musterman</p>
+  <p>Interactive Web Design with Javascript</p>
+  <p>ISLT 7356</p>
+</footer>
+  </body>
+</html>
