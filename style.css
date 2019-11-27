@@ -80,6 +80,12 @@ section.homemain{
 section.homemain h2{
   text-align: center;
 }
+section.staffmain{
+  text-align: center;
+}
+section.rhythmmain{
+  text-align: center;
+}
 section.attention{
   margin:0;
   display: table;
@@ -164,3 +170,38 @@ footer {
 	padding: 1px;
   color:#000;
 	}
+.drag div{
+display: table-cell;
+//  border: 1px solid #fff;
+}
+.drag {
+  margin-left: 33%;
+  //margin-right: 35%;
+}
+.drop{
+
+  margin-left:33%;
+//  margin-right:35%;
+}
+.drop div{
+display: table-cell;
+  border: 1px solid #fff;
+  width: 98px;
+  text-align: center;
+  vertical-align: middle;
+}
+.math_1 {
+  border: 1px solid #fff;
+  display: table-cell;
+}
+.math_1 p{
+  float: right;
+}
+.math_1 .second{
+  float: right;
+}
+  #drag { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #draggable2 { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+
+   #drop {border: 1px solid #fff; width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+   #droppable2 {border: 1px solid #fff; width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }

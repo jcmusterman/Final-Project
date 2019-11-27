@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamics</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+
+
+   </style>
+
+</head>
+  <body>
+  <!--  <div id="wrapper"> -->
+    <header>
+      <h1>Dynamics</h1>
+    </header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="staff.html">The Staff</a></li>
+          <li><a href="notenames.html">Note Names</a>
+            <!--<div class="dropdown">
+            <ul>
+              <li><a href="treble.html">Treble Clef</a></li>
+              <li><a href="bass.html">bass Clef</a></li>
+            </ul>
+          </div>-->
+          </li><!--add sub pages for treble and bass clef each-->
+          <li><a href="rhythm.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
+          <li><a href="dynamics.html">Dynamics</a></li>
+        </ul>
+      </nav>
+
+    <section class="drag">
+      <div id="drag_p" class="ui-widget-content">
+        <img src="img/p.jpg" alt="piano" style="width:100px">
+      </div>
+      <div id="drag_f" class="ui-widget-content">
+        <img src="img/f.jpg" alt="forte" style="width:100px">
+      </div>
+      <div id="drag_pp" class="ui-widget-content">
+        <img src="img/pp.jpg" alt="pianissimo" style="width:100px">
+      </div>
+      <div id="drag_mp" class="ui-widget-content">
+        <img src="img/mp.jpg" alt="mezzopiano" style="width:100px">
+      </div>
+      <div id="drag_ff" class="ui-widget-content">
+        <img src="img/ff.jpg" alt="fortissimo" style="width:100px">
+      </div>
+      <div id="drag_mf" class="ui-widget-content">
+        <img src="img/mf.jpg" alt="mezzoforte" style="width:100px">
+      </div>
+    </section>
+    <section class="drop">
+      <div id="drop_pp" class="ui-widget-header">
+        <p>Very Soft</p>
+      </div>
+      <div id="drop_p" class="ui-widget-header">
+        <p>Soft</p>
+      </div>
+      <div id="drop_mp" class="ui-widget-header">
+        <p>Moderately Soft</p>
+      </div>
+      <div id="drop_mf" class="ui-widget-header">
+        <p>Moderately Loud</p>
+      </div>
+      <div id="drop_f" class="ui-widget-header">
+        <p>Loud</p>
+      </div>
+      <div id="drop_ff" class="ui-widget-header">
+        <p>Very Loud</p>
+      </div>
+    </section>
+    <button id="show_answer">Show answer</button>
+<footer>
+  <p><strong>Ridgefield Elementary School</strong></p>
+    <p>123 School Rd |Town, USA 12345 | Phone:(123)456-7890 | Fax:(123)456-0987<p>
+</footer>
+  </body>
+</html>

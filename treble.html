@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="script.js"></script>
-  </head>
+    </head>
   <body>
     <!--<div id="wrapper">-->
     <header>
@@ -18,20 +18,26 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="staff.html">The Staff</a></li>
           <li><a href="notenames.html">Note Names</a>
-<!--<div class="dropdown">
+<div class="dropdown">
             <ul>
               <li><a href="treble.html">Treble Clef</a></li>
               <li><a href="bass.html">bass Clef</a></li>
             </ul>
-</div>-->
+</div>
           </li><!--add sub pages for treble and bass clef each-->
           <li><a href="rhythm.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
           <li><a href="dynamics.html">Dynamics</a></li>
         </ul>
       </nav>
-<section class="homemain">
-    <h2>Get Started Reading Music</h2>
-    <p>This website will teach you the basics of reading music. Use the menu to jump to a page or <a href="staff.html">click here</a> to start.</p>
+<section class="staffmain">
+    <img class="treble_name" id="treble_note" src="img/pha.png" alt = "pha">
+    <h2>The Treble Clef Staff</h2>
+    <p>Placeholder text about treble clef</p>
+    <button id="note_a">A</button>
+    <button id="note_b">B</button>
+    <button id="note_c">C</button>
+    <button id="note_new">New Note</button>
+
 </section>
 <footer>
   <p>Joseph Musterman</p>
@@ -39,4 +45,14 @@
   <p>ISLT 7356</p>
 </footer>
   </body>
+  <script>
+
+    $("#note_a").click(function(){
+      var x = document.getElementsByClassName("treble_name")[0].alt;
+        alert(x);
+        if (x = "jeie"){
+    	alert("no");
+
+    });
+  </script>
 </html>
