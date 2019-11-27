@@ -64,16 +64,12 @@ section.homemain{
   padding:0 10px 0 20px;
   vertical-align: middle;
 }
-video{
-  padding:50px 0 0 10px;
-}
+
 section img{
   display: table-cell;
   width:400px;
 }
-div.announcements{
 
-}
 section.homemain{
   padding: 10px 0;
 }
@@ -85,80 +81,11 @@ section.staffmain{
 }
 section.rhythmmain{
   text-align: center;
+  display: block;
 }
-section.attention{
-  margin:0;
-  display: table;
-  background-color: #fff;
-  padding:0 0 0 10px;
-  max-width: 1100px;
-
-}
-.attention .upcoming h2{
-  text-align:center;
-}
-.attention .upcoming{
-  display: table-cell;
-  min-width: 364px;
-}
-.attention .resources h2{
-  text-align:center;
-
-}
-.attention .resources{
-  text-align:center;
-
-display: table-cell;
-min-width: 364px;
-
-}
-.attention .reminders{
-  display: table-cell;
-  width:100%;
-  min-width: 364px;
-
-}
-.attention .reminders h2{
-  text-align:center;
-
-}
-.attention .reminders p{
-}
-.recommentations{
-  display: table;
-  border-top: 1px solid white;
-  margin-top: 5px;
-  background-color: #fff;
-}
-.recommentations div h2{
-  text-align: center;
-}
-.recommentations div{
-  display: table-cell;
-  padding:0 1em;
-}
-.aboutme{
-  display: table;
-  background-color: #fff;
-}
-.aboutme div{
-  padding: 0 0 0 5px;
-  display: table-cell;
-  vertical-align:top;
-}
-.aboutme img{
-  display: table-cell;
-}
-
-form{
-  background-color: #fff;
-}
-form .note{
-  padding: 5px 0 0 0;
-  font-size: .8em;
-}
-form section{
-  padding:0 0 5px 5px;
+section.rhythmmain div{
+  display: inline-block;
+  margin: 0 30px;
 }
 
 footer {
@@ -190,18 +117,16 @@ display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
-.math_1 {
-  border: 1px solid #fff;
-  display: table-cell;
-}
-.math_1 p{
-  float: right;
-}
-.math_1 .second{
-  float: right;
-}
-  #drag { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-  #draggable2 { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
 
-   #drop {border: 1px solid #fff; width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
-   #droppable2 {border: 1px solid #fff; width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+button{
+  font-size: 24px;
+  background-color: #b7bec9
+}
+.prev_next{
+  text-align: center;
+}
+.prev_next a{
+  font-size: 24px;
+  color: #000;
+  background-color: #fff;
+}

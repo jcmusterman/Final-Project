@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamics</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+
+
+</head>
+  <body>
+  <!--  <div id="wrapper"> -->
+    <header>
+      <h1>Dynamics</h1>
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staff.html">The Staff</a></li>
+      <!--<div class="dropdown">
+          <ul>
+            <li><a href="treble.html">Treble Clef</a></li>
+            <li><a href="bass.html">bass Clef</a></li>
+          </ul>
+        </div>-->
+        </li><!--add sub pages for treble and bass clef each-->
+        <li><a href="rhythm_notes.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
+        <li><a href="dynamics.html">Dynamics</a></li>
+      </ul>
+    </nav>
+    <p>Drag and drop the dynamics symbols to the correct definition.</p>
+<section class="drag">
+      <div id="drag_p" class="ui-widget-content">
+        <img src="img/p.jpg" alt="piano" style="width:100px">
+      </div>
+      <div id="drag_f" class="ui-widget-content">
+        <img src="img/f.jpg" alt="forte" style="width:100px">
+      </div>
+      <div id="drag_pp" class="ui-widget-content">
+        <img src="img/pp.jpg" alt="pianissimo" style="width:100px">
+      </div>
+      <div id="drag_mp" class="ui-widget-content">
+        <img src="img/mp.jpg" alt="mezzopiano" style="width:100px">
+      </div>
+      <div id="drag_ff" class="ui-widget-content">
+        <img src="img/ff.jpg" alt="fortissimo" style="width:100px">
+      </div>
+      <div id="drag_mf" class="ui-widget-content">
+        <img src="img/mf.jpg" alt="mezzoforte" style="width:100px">
+      </div>
+    </section>
+    <section class="drop">
+      <div id="drop_pp" class="ui-widget-header">
+        <p>Very Soft</p>
+      </div>
+      <div id="drop_p" class="ui-widget-header">
+        <p>Soft</p>
+      </div>
+      <div id="drop_mp" class="ui-widget-header">
+        <p>Moderately Soft</p>
+      </div>
+      <div id="drop_mf" class="ui-widget-header">
+        <p>Moderately Loud</p>
+      </div>
+      <div id="drop_f" class="ui-widget-header">
+        <p>Loud</p>
+      </div>
+      <div id="drop_ff" class="ui-widget-header">
+        <p>Very Loud</p>
+      </div>
+    </section>
+
+    <section class="prev_next">
+      <a href="dynamics.html">Prev</a>
+      <a href="recap.html">Next</a>
+    </section>
+    <footer>
+      <p>Joseph Musterman</p>
+      <p>Interactive Web Design with Javascript</p>
+      <p>ISLT 7356</p>
+    </footer>
+  </body>
+</html>

@@ -7,10 +7,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
   <script src="script.js"></script>
-  <style>
 
-
-   </style>
 
 </head>
   <body>
@@ -18,67 +15,40 @@
     <header>
       <h1>Dynamics</h1>
     </header>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="staff.html">The Staff</a></li>
-          <li><a href="notenames.html">Note Names</a>
-            <!--<div class="dropdown">
-            <ul>
-              <li><a href="treble.html">Treble Clef</a></li>
-              <li><a href="bass.html">bass Clef</a></li>
-            </ul>
-          </div>-->
-          </li><!--add sub pages for treble and bass clef each-->
-          <li><a href="rhythm.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
-          <li><a href="dynamics.html">Dynamics</a></li>
-        </ul>
-      </nav>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staff.html">The Staff</a></li>
+      <!--<div class="dropdown">
+          <ul>
+            <li><a href="treble.html">Treble Clef</a></li>
+            <li><a href="bass.html">bass Clef</a></li>
+          </ul>
+        </div>-->
+        </li><!--add sub pages for treble and bass clef each-->
+        <li><a href="rhythm_notes.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
+        <li><a href="dynamics.html">Dynamics</a></li>
+      </ul>
+    </nav>
+    <p>Dynamics tell you how loud or soft to play something. The fundamental dynamics are piano for soft and forte for loud.</p>
+    <img src="img/p.jpg" alt="piano" style="width:50px"><p>Piano</p>
+    <img src="img/f.jpg" alt="forte" style="width:50px"><p>Forte</p><br>
+    <p>You may also see those markings doubled for pianissimo(very soft) and fortissimo(very loud).</p>
+    <img src="img/pp.jpg" alt="pianissimo" style="width:50px"><p>Pianissimo</p>
+    <img src="img/ff.jpg" alt="fortissimo" style="width:50px"><p>Fortissimo</p><br>
+    <p>Finally, there are two dynamics between piano and forte: mezzo piano, which is moderately soft, and mezzo forte, which is moderately loud.</p>
+    <img src="img/mp.jpg" alt="mezzopiano" style="width:50px"><p>Mezzo Piano</p>
+    <img src="img/mf.jpg" alt="mezzoforte" style="width:50px"><p>Mezzo Forte</p><br>
 
-    <section class="drag">
-      <div id="drag_p" class="ui-widget-content">
-        <img src="img/p.jpg" alt="piano" style="width:100px">
-      </div>
-      <div id="drag_f" class="ui-widget-content">
-        <img src="img/f.jpg" alt="forte" style="width:100px">
-      </div>
-      <div id="drag_pp" class="ui-widget-content">
-        <img src="img/pp.jpg" alt="pianissimo" style="width:100px">
-      </div>
-      <div id="drag_mp" class="ui-widget-content">
-        <img src="img/mp.jpg" alt="mezzopiano" style="width:100px">
-      </div>
-      <div id="drag_ff" class="ui-widget-content">
-        <img src="img/ff.jpg" alt="fortissimo" style="width:100px">
-      </div>
-      <div id="drag_mf" class="ui-widget-content">
-        <img src="img/mf.jpg" alt="mezzoforte" style="width:100px">
-      </div>
+
+    <section class="prev_next">
+      <a href="rhythm_rests_math.html">Prev</a>
+      <a href="dynamics_matching.html">Next</a>
     </section>
-    <section class="drop">
-      <div id="drop_pp" class="ui-widget-header">
-        <p>Very Soft</p>
-      </div>
-      <div id="drop_p" class="ui-widget-header">
-        <p>Soft</p>
-      </div>
-      <div id="drop_mp" class="ui-widget-header">
-        <p>Moderately Soft</p>
-      </div>
-      <div id="drop_mf" class="ui-widget-header">
-        <p>Moderately Loud</p>
-      </div>
-      <div id="drop_f" class="ui-widget-header">
-        <p>Loud</p>
-      </div>
-      <div id="drop_ff" class="ui-widget-header">
-        <p>Very Loud</p>
-      </div>
-    </section>
-    <button id="show_answer">Show answer</button>
-<footer>
-  <p><strong>Ridgefield Elementary School</strong></p>
-    <p>123 School Rd |Town, USA 12345 | Phone:(123)456-7890 | Fax:(123)456-0987<p>
-</footer>
+    <footer>
+      <p>Joseph Musterman</p>
+      <p>Interactive Web Design with Javascript</p>
+      <p>ISLT 7356</p>
+    </footer>
   </body>
 </html>

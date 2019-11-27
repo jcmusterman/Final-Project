@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>How to Read Music</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--<div id="wrapper">-->
+    <header>
+      <h1>Rhythm</h1>
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staff.html">The Staff</a></li>
+      <!--<div class="dropdown">
+          <ul>
+            <li><a href="treble.html">Treble Clef</a></li>
+            <li><a href="bass.html">bass Clef</a></li>
+          </ul>
+        </div>-->
+        </li><!--add sub pages for treble and bass clef each-->
+        <li><a href="rhythm_notes.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
+        <li><a href="dynamics.html">Dynamics</a></li>
+      </ul>
+    </nav>
+      <h1>Rhythm Math - Notes</h1>
+      	<form action="#" method="get"
+          	name="rhythm_form" id="rhythm_form">
+      		<fieldset>
+              	<legend>Rhythm Math</legend>
+                <p>Enter the total number of beats for the note combinations shown.</p>
+              	<label for="Q1">Q1:</label><br>
+                <img src="img/math_1.png" alt="math_1" style="width:200px"><br>
+              	<input type="number" name="Q1" id="Q1" autofocus>
+              	<span>*</span><br><br>
+              	<label for="Q2">Q2:</label><br>
+                <img src="img/math_2.png" alt="math_2" style="width:200px"><br>
+              	<input type="number" name="Q2" id="Q2">
+              	<span>*</span><br><br>
+                <label for="Q3">Q3:</label><br>
+                <img src="img/math_3.png" alt="math_3" style="width:200px"><br>
+                <input type="number" name="Q3" id="Q3">
+                <span>*</span><br>
+      		</fieldset>
+
+
+      		<input type="submit" id="submit" value="Submit Answers"><br>
+
+      	</form>
+        <section class="prev_next">
+          <a href="rhythm_notes.html">Prev</a>
+          <a href="rhythm_rests.html">Next</a>
+        </section>
+<footer>
+  <p>Joseph Musterman</p>
+  <p>Interactive Web Design with Javascript</p>
+  <p>ISLT 7356</p>
+</footer>
+  </body>
+</html>
