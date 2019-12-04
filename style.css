@@ -130,3 +130,18 @@ button{
   color: #000;
   background-color: #fff;
 }
+#slider{
+
+}
+
+.container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

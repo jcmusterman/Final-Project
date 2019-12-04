@@ -7,6 +7,14 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+    </script>
   </head>
   <body>
     <!--<div id="wrapper">-->
@@ -28,6 +36,25 @@
         <li><a href="dynamics.html">Dynamics</a></li>
       </ul>
     </nav>
+<!--https://bxslider.com/-->
+<script>
+$(document).ready(function(){
+  $("#slider").bxSlider({
+    auto: true,
+    autoControls: true,
+    captions: true,
+    slideWidth: 280,
+    slideMargin: 10
+  })
+});
+</script>
+<div class = "container">
+  <ul id="slider">
+    <li> <img src="img/quarter_note.png" alt="quarter note" style="width:100px" title="Quarter Note"></li>
+    <li> <img src="img/half_note.png" alt="half note" style="width:100px" title="Half Note"></li>
+    <li> <img src="img/whole_note.png" alt="whole note" style="width:100px" title="Whole Note"></li>
+  </ul>
+</div>
   <section class="rhythmmain">
     <h2>Rhythm - Notes</h2>
     <p>Now that you know the names of the notes, we need to figure out how long they last. Each note lasts a certain number of beats and you can tell how many based on what the note looks like. There are many different types of notes but we will focus on three of the most basic here.</p>

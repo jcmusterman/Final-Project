@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ask Mrs. Smith</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+  <div id="wrapper">
+  <header>
+    <img src="img/griffin.png" alt="Griffin logo">
+    <h1>Welcome to Mrs. Smith's Classroom!</h1>
+  </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reading.html">Reading Class</a></li>
+        <li><a href="creativewriting.html">Creative Writing Class</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="form.html">Ask A Question</a></li>
+        <li><a href="gallery/gallery.html" target="_blank">Photo Gallery</a></li>
+      </ul>
+    </nav>
+<div>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <section>
+    <h2>Questions or Comments?</h2>
+    <p class="note">*required</p>
+    <label for="name">Name<span>*:</span></label><br>
+    <input type="text" name="name">
+  </section>
+  <section>
+    <label for="question">Question/Comment:</label><br>
+    <textarea id="question" name="question" placeholder="Questions/Comments"></textarea>
+  </section>
+  <section>
+    <label for="email">Email Address:</label><br>
+    <input type="text" name="email">
+  </section>
+  <section>
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" name="phone">
+  <input type="submit" value="Submit">
+</form>
+</div>
+<footer>
+  <p><strong>Ridgefield Elementary School</strong></p>
+    <p>123 School Rd |Town, USA 12345 | Phone:(123)456-7890 | Fax:(123)456-0987<p>
+</footer>
+</body>
+</html>
