@@ -163,7 +163,7 @@ $("#recap_form").submit(
 	)
 //Note Names Treble
 	var counter = 0;
-	var treble_img = [//Task 1.b.1 use an array
+	var note_img = [//Task 1.b.1 use an array
 		"img/note_names/E4.png",
 		"img/note_names/F4.png",
 		"img/note_names/G4.png",
@@ -172,9 +172,18 @@ $("#recap_form").submit(
 		"img/note_names/C5.png",
 		"img/note_names/D5.png",
 		"img/note_names/E5.png",
-		"img/note_names/F5.png"
+		"img/note_names/F5.png",
+		"img/note_names/G2.png",
+		"img/note_names/A2.png",
+		"img/note_names/B2.png",
+		"img/note_names/C3.png",
+		"img/note_names/D3.png",
+		"img/note_names/E3.png",
+		"img/note_names/F3.png",
+		"img/note_names/G3.png",
+		"img/note_names/A3.png"
 	]
-	var treble_alt = [
+	var note_alt = [
 		"e",
 		"f",
 		"g",
@@ -184,19 +193,28 @@ $("#recap_form").submit(
 		"d",
 		"e",
 		"f",
+		"g",
+		"a",
+		"b",
+		"c",
+		"d",
+		"e",
+		"f",
+		"g",
+		"a",
 	]
 	//	$("#show_answer").button();
-	var next_note = Math.floor(Math.random() * treble_img.length)
-	document.getElementById("treble_note").src = treble_img[next_note];//Task 1.e.2 manipulate an image
-	document.getElementById("treble_note").alt = treble_alt[next_note];
-	var x = document.getElementById("treble_note").alt;
+	var next_note = Math.floor(Math.random() * note_img.length)
+	document.getElementById("note_img").src = note_img[next_note];//Task 1.e.2 manipulate an image
+	document.getElementById("note_img").alt = note_alt[next_note];
+	var x = document.getElementById("note_img").alt;
 	$("#note_new").click(function(){//Task 1.c.1 use a custom function
 		//Task 2.a.1 use a jQuery selector
 		//Task 2.a.3 use a jQuery event
-		var next_note = Math.floor(Math.random() * treble_img.length)
-		document.getElementById("treble_note").src = treble_img[next_note];//Task 1.d.3 change an attribute/element property
-		document.getElementById("treble_note").alt = treble_alt[next_note];
-		var x = document.getElementById("treble_note").alt;
+		var next_note = Math.floor(Math.random() * note_img.length)
+		document.getElementById("note_img").src = note_img[next_note];//Task 1.d.3 change an attribute/element property
+		document.getElementById("note_img").alt = note_alt[next_note];
+		var x = document.getElementById("note_img").alt;
 		//I tried getElementsByClassName here to eliminate some lines but it wouldn't work
 		//document.getElementsByClassName("note_button").style.backgroundColor = "#b7bec9"
 		document.getElementById("note_a").style.backgroundColor = "#b7bec9";//Task 2.a.2 use a jQuery method
@@ -210,7 +228,7 @@ $("#recap_form").submit(
 
 
 $("#note_a").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "a"){
  document.getElementById("note_a").style.backgroundColor = "green";
  alert("Correct!");
@@ -219,7 +237,7 @@ if (x == "a"){
 }
 });
 $("#note_b").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "b"){
 	document.getElementById("note_b").style.backgroundColor = "green";
  alert("Correct!");
@@ -228,7 +246,7 @@ if (x == "b"){
 }
 });
 $("#note_c").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "c"){
 	document.getElementById("note_c").style.backgroundColor = "green";
  alert("Correct!");
@@ -237,7 +255,7 @@ if (x == "c"){
 }
 });
 $("#note_d").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "d"){
 	document.getElementById("note_d").style.backgroundColor = "green";
  alert("Correct!");
@@ -246,7 +264,7 @@ if (x == "d"){
 }
 });
 $("#note_e").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "e"){
 	document.getElementById("note_e").style.backgroundColor = "green";
  alert("Correct!");
@@ -255,7 +273,7 @@ if (x == "e"){
 }
 });
 $("#note_f").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "f"){
 	document.getElementById("note_f").style.backgroundColor = "green";
  alert("Correct!");
@@ -264,7 +282,7 @@ if (x == "f"){
 }
 });
 $("#note_g").click(function(){
-	var x = document.getElementById("treble_note").alt;
+	var x = document.getElementById("note_img").alt;
 if (x == "g"){
 	document.getElementById("note_g").style.backgroundColor = "green";
  alert("Correct!");
