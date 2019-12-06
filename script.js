@@ -6,15 +6,15 @@ $("#recap_form").submit(
 	function(event){
 		$("span").text("*");
 		var isValid = true;
-		var recap1 = $("#Recap1").val();
-		var recap2 = $("#Recap2").val();
-		var recap3 = $("#Recap3").val();
+		var recap1 = $("#Recap1").val().toLowerCase();
+		var recap2 = $("#Recap2").val().toLowerCase();
+		var recap3 = $("#Recap3").val().toLowerCase();
 		var recap4 = $("#Recap4").val();
 		var recap5 = $("#Recap5").val();
 		var recap6 = $("#Recap6").val();
-		var recap7 = $("#Recap7").val();
-		var recap8 = $("#Recap8").val();
-		var recap9 = $("#Recap9").val();
+		var recap7 = document.getElementById("Recap7_answer").checked;
+		var recap8 = document.getElementById("Recap8_answer").checked;
+		var recap9 = document.getElementById("Recap9_answer").checked;
 //Task 2.c validate form fields
 		if (recap1 == ""){//Task 1.b.2 use an if statement
 			$("#Recap1").next().text("This field is required")
@@ -58,25 +58,22 @@ $("#recap_form").submit(
 			$("#Recap6").next().text("Incorrect answer")
 			isValid = false;
 		}
-		if (recap7 == ""){
-			$("#Recap7").next().text("This field is required")
-			isValid = false;
-		}else if (recap7 != "f"){
-			$("#Recap7").next().text("Incorrect answer")
-			isValid = false;
-		}
-		if (recap8 == ""){
-			$("#Recap8").next().text("This field is required")
-			isValid = false;
-		}else if (recap8 != "pp"){
-			$("#Recap8").next().text("Incorrect answer")
+		if (recap7 == true){
+			isValid = true;
+		}else if (recap7 == false){
+			$("#Recap7").text("Incorrect answer")
 			isValid = false;
 		}
-		if (recap9 == ""){
-			$("#Recap9").next().text("This field is required")
+		if (recap8 == true){
+			isValid = true;
+		}else if (recap8 == false){
+			$("#Recap8").text("Incorrect answer")
 			isValid = false;
-		}else if (recap9 != "mf"){
-			$("#Recap9").next().text("Incorrect answer")
+		}
+		if (recap9 == true){
+			isValid = true;
+		}else if (recap9 == false){
+			$("#Recap9").text("Incorrect answer")
 			isValid = false;
 		}
 		if (isValid == false) {

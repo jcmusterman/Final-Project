@@ -1,7 +1,7 @@
 * {margin 0; padding 0;}
 body{
   font-family: arial, helvetica, sans-serif;
-  background-color: #a8a8a8;
+  background-color: #9daec9;
 }
 form{
   min-width: 760px; max-width: 1100px; margin:auto;
@@ -15,7 +15,6 @@ header{
 }
 
 header h1{
-  //display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
@@ -113,6 +112,22 @@ header h1{
 }
 
 end of nav stuff*/
+h1{
+  text-align: center;
+}
+span a{
+  color: #000;
+  text-decoration: none;
+  background-color: #9daec9;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+span a:hover{
+  box-shadow: 4px 4px 5px #aaa;
+}
+span a:active{
+  background: #fff;
+}
 section.homemain{
   margin:0;
   background-color: #fff;
@@ -120,36 +135,64 @@ section.homemain{
   padding:0 10px 0 20px;
   vertical-align: middle;
 }
-section.dynamicsmain{
+.staffmain{
   margin:0;
+  background-color: #fff;
   text-align: center;
   padding:0 10px 0 20px;
   vertical-align: middle;
+}
+.staffmain img{
+  border: 1px solid #000;
+  margin-top: 5px;
+}
+.dynamicsmain{
+  margin:0;
+  background-color: #fff;
+  text-align: center;
+  padding:0 10px 0 20px;
+  vertical-align: middle;
+  text-align: center;
 }
 .dynamicsmain div{
   display: inline-table;
   margin-left:20px;
   margin-right: 20px;
 }
+.recapmain{
+  margin:0;
+  background-color: #fff;
+  text-align: center;
+  padding:0 10px 0 20px;
+  vertical-align: middle;
+}
+.recapmain fieldset{
+  background-color: #9daec9;
+}
+.recapmain fieldset legend{
+  background-color: #9daec9;
+  margin-top: 5px;
+}
 section img{
   display: table-cell;
   width:400px;
 }
 
-section.homemain{
+.homemain{
   padding: 10px 0;
 }
-section.homemain h2{
+.homemain h2{
   text-align: center;
 }
-section.staffmain{
-  text-align: center;
-}
-section.rhythmmain{
-  text-align: center;
+.rhythmmain{
   display: block;
+  margin:0;
+  background-color: #fff;
+  text-align: center;
+  padding:0 10px 0 20px;
+  vertical-align: middle;
 }
-section.rhythmmain div{
+.rhythmmain div{
   display: inline-block;
   margin: 0 30px;
 }
@@ -186,15 +229,28 @@ display: table-cell;
 
 button{
   font-size: 24px;
-  background-color: #b7bec9
+  background-color: #b7bec9;
+  margin-bottom: 5px;
 }
 .prev_next{
   text-align: center;
+  padding-bottom:  5px;
 }
 .prev_next a{
   font-size: 24px;
   color: #000;
-  background-color: #fff;
+  text-decoration: none;
+  background-color: #9daec9;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.prev_next a:hover{
+  box-shadow: 4px 4px 5px #aaa;
+}
+.prev_next a:active{
+  background: #fff;
+
 }
 #slider{
 

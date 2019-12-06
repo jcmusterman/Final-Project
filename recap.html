@@ -9,25 +9,38 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <!--<div id="wrapper">-->
     <header>
       <h1>Recap Quiz</h1>
     </header>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="staff.html">The Staff</a></li>
-        <!--<div class="dropdown">
-            <ul>
-              <li><a href="treble.html">Treble Clef</a></li>
-              <li><a href="bass.html">bass Clef</a></li>
-            </ul>
-          </div>-->
-          </li><!--add sub pages for treble and bass clef each-->
-          <li><a href="rhythm_notes.html">Rhythm</a></li><!--add sub pages for notes and rests each-->
-          <li><a href="dynamics.html">Dynamics</a></li>
-        </ul>
-      </nav>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">The Staff</a>
+          <ul>
+            <li><a href="staff.html">The Staff</a></li>
+            <li><a href="treble.html">Treble Clef</a></li>
+            <li><a href="bass.html">Bass Clef</a></li>
+            <li><a href="note_review.html">Note Quiz</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rhythm</a>
+          <ul>
+            <li><a href="rhythm_notes.html">Notes</a></li>
+            <li><a href="rhythm_notes_math.html">Notes Math</a></li>
+            <li><a href="rhythm_rests.html">Rests</a></li>
+            <li><a href="rhythm_rests_math.html">Rests Math</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Dynamics</a>
+          <ul>
+            <li><a href="dynamics.html">Dynamics</a></li>
+            <li><a href="dynamics_matching.html">Dynamics Matching</a></li>
+          </ul>
+        </li>
+        <li><a href="recap.html">Recap</a></li>
+      </ul>
+    </nav>
+    <section class="recapmain">
       <form action="#" method="get"
           name="recap_form" id="recap_form">
         <fieldset>
@@ -65,23 +78,51 @@
         <fieldset>
               <legend>Dynamics</legend>
               <p>Type the symbols that match the definitions</p>
-              <label for="Recap7">Q7:</label><br>
-              <h3>Forte</h3>
-              <input type="text" name="Recap7" id="Recap7" autofocus>
-              <span>*</span><br><br>
-              <label for="Recap8">Q8:</label><br>
-              <h3>Pianissimo</h3>
-              <input type="text" name="Recap8" id="Recap8">
-              <span>*</span><br><br>
-              <label for="Recap9">Q9:</label><br>
-              <h3>Mezzo Forte</h3>
-              <input type="text" name="Recap9" id="Recap9">
-              <span>*</span><br>
+                <label for="Recap7">Q7:</label>
+                <h3>Forte</h3>
+                  <input type="radio" name="Recap7" checked>
+                  <img src="img/p.jpg" alt="p" style="width: 5em">
+
+                  <input type="radio" name="Recap7" id="Recap7_answer">
+                  <img src="img/f.jpg" alt="f" style="width: 5em">
+
+                  <input type="radio" name="Recap7">
+                  <img src="img/ff.jpg" alt="ff" style="width: 5em">
+                  <br>
+                  <span id="Recap7" >*</span>
+                  <br><br>
+
+                  <label for="Recap8">Q8:</label>
+                <h3>Pianissimo</h3>
+                  <input type="radio" name="Recap8" id="Recap8_answer" checked>
+                  <img src="img/pp.jpg" alt="pp" style="width: 5em">
+
+                  <input type="radio" name="Recap8">
+                  <img src="img/mf.jpg" alt="mf" style="width: 5em">
+
+                  <input type="radio" name="Recap8">
+                  <img src="img/p.jpg" alt="p" style="width: 5em">
+                  <br>
+                  <span id="Recap8" >*</span>
+                  <br><br>
+                  <label for="Recap9">Q9:</label>
+                <h3>Mezzo Forte</h3>
+                  <input type="radio" name="Recap9" checked>
+                  <img src="img/mp.jpg" alt="mp" style="width: 5em">
+
+                  <input type="radio" name="Recap9" id="Recap9_answer">
+                  <img src="img/mf.jpg" alt="mf" style="width: 5em">
+
+                  <input type="radio" name="Recap9">
+                  <img src="img/f.jpg" alt="f" style="width: 5em">
+                  <br>
+                  <span id="Recap9" >*</span>
         </fieldset>
 
         <input type="submit" id="submit" value="Submit Answers"><br>
 
       </form>
+    </section>
 <footer>
   <p>Joseph Musterman</p>
   <p>Interactive Web Design with Javascript</p>
