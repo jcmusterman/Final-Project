@@ -1,3 +1,10 @@
+/*
+Joey Musterman
+ISLT-7356, Interactive Web Development with JavaScript
+Final Project
+Dec 6, 2019
+*/
+
 * {margin 0; padding 0;}
 body{
   font-family: arial, helvetica, sans-serif;
@@ -250,9 +257,6 @@ button{
 }
 .prev_next a:active{
   background: #fff;
-
-}
-#slider{
 
 }
 

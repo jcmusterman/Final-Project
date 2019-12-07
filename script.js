@@ -1,4 +1,9 @@
-
+/*
+Joey Musterman
+ISLT-7356, Interactive Web Development with JavaScript
+Final Project
+Dec 6, 2019
+*/
 
 $(document).ready(function(){
 //Recap
